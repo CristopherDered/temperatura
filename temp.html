@@ -90,8 +90,8 @@
 <head>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"
 		charset="utf-8"></script>
-	<script src="raphael-2.1.4.min.js"></script>
-	<script src="justgage.js"></script>
+	<script src="./raphael-2.1.4.min.js"></script>
+	<script src="./justgage.js"></script>
 
 	<script>
 		var accessToken = "24f27fab26c278bf25fde775f94a5d510fc9beb8";
@@ -121,6 +121,7 @@
 					temp = parseFloat(data.result);
 					temp = temp.toFixed(2);
 					g.refresh(temp);
+					console.log(temp)
 					setTimeout(getReading, 1000);
 				}
 				else {
@@ -132,6 +133,7 @@
 				if (status == "success") {
 					temp = parseFloat(data.result);
 					temp = temp.toFixed(2);
+					console.log(temp)
 					h.refresh(temp);
 					setTimeout(getReading, 1000);
 				}
@@ -143,6 +145,7 @@
 				if (status == "success") {
 					temp = parseFloat(data.result);
 					temp = temp.toFixed(2);
+					console.log(temp)
 					f.refresh(temp);
 					setTimeout(getReading, 1000);
 				}
